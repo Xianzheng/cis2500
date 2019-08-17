@@ -1,0 +1,49 @@
+Grading Scheme
+
+Part 1: 2 marks - Compilation
+Part 2: 4 marks - Creation of correct myContactsList.db file
+Part 3: 4 marks - Retrieval of 2 contacts
+Part 4: 2 marks - Test that you cannot forget to add a phone number or email
+---
+Total: 12 marks - Total
+
+1. Compile their code using their makefile for 2 marks.  If there is not
+   makefile or it does not work, compile up their code manually.  A
+   successful compile is 1 mark.
+
+2. Run their code with the test1.txt as input (or type it in by hand if
+   there are problems redirecting input:
+
+   $ rm myContactsList.db
+   $ ./contacts < test1.txt
+
+   This should enter 4 contacts (Antonie, Calvert, Chiu and Gillis).
+   The myContactsList.db file should be 370 bytes long (check with ls -l).
+
+   Success = 4 [part marks if they can show you that some of the contacts
+   are in myContactsList.db]
+
+3. Part of the test is the retrieval of 2 contacts by phone number - the 
+   correct output is below [2 marks for each correct retrieval - they lose
+   marks if any of the fields are incorrect or missing].
+
+First Name: David
+Last Name: Calvert
+Company Name: University of Guelph
+Phone Number: 53085   
+    OR Phone Number (enter only numbers): 53085 because of typo in assignment
+Email: dcalvert@uoguelph.ca
+
+First Name: Dan
+Last Name: Gillis
+Company Name:
+Phone Number: 52951   
+    OR Phone Number (enter only numbers): 52951 because of typo in assignment
+Email: dgillis@uoguelph.ca
+
+4. Run their code again and this time just try to not add anything to any of the
+   requested fields.  This should be okay for First Name, Last Name, and Company
+   Name but you should not be allowed to enter an empty field for Phone Number
+   or Email.  Subtract 1 for each necessary field (Phone Number, Email) that can
+   be entered as an empty field. Maximum: 2 marks.
+
